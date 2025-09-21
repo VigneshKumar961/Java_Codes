@@ -1,0 +1,48 @@
+class Vehicle{
+    
+    public void vehicleHonk(){
+        
+        System.out.println("The vehicle uses horn");
+    
+    }
+}
+
+class Hyundai extends Vehicle{
+    
+    public void vehicleHonk(){
+        
+        System.out.println("Hyundai horn is very good");
+        
+    }
+    
+    
+}
+
+class Audi extends Vehicle{
+    
+    public void vehicleHonk(){
+        
+        System.out.println("Audi horn screms");
+    }
+}
+
+
+class Polymorphism{
+    
+    public static void main(String[] args){
+        
+        Vehicle vehicle = new Vehicle();
+        
+        Vehicle hyundai = new Hyundai();
+        
+        Vehicle audi = new Audi();
+        
+      vehicle.vehicleHonk();
+      
+      hyundai.vehicleHonk();
+      
+      audi.vehicleHonk();
+      
+      
+    }
+}

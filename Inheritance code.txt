@@ -1,0 +1,36 @@
+class Animal{
+    
+    String breed =  "cat";
+    
+    public void eatingHabit(){
+    
+        System.out.println("The cat likes Fish");
+    }
+    
+}
+    
+    class Dog extends Animal{
+        
+        public void eatingHabit1(){
+            
+            System.out.println("The Dog likes Meat");
+        }
+        
+    }
+    
+
+class Inheritance{
+    
+    public static void main(String[] args){
+        
+        Dog dog = new Dog();
+        
+        dog.eatingHabit();
+        
+        dog.eatingHabit1();
+        
+        System.out.println("Breed of Animal is: " + dog.breed);
+    }
+}
+    
+    

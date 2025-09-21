@@ -1,0 +1,32 @@
+// Abstract class
+abstract class Employee {
+    
+    // Abstract method
+    public abstract void employeeAttributes();
+    
+    // Concrete method
+    public void empName() {
+        System.out.println("Employee name is Random");
+    }
+}
+
+// Subclass implementing abstract method
+class EmployeeCompany extends Employee {
+    
+    @Override
+    public void employeeAttributes() {
+        System.out.println("Employee works in TCS");
+    }
+}
+
+// Main class
+public class AbstractionDemo {
+    
+    public static void main(String[] args) {
+        // Using subclass object
+        EmployeeCompany company = new EmployeeCompany();
+        
+        company.employeeAttributes();
+        company.empName();
+    }
+}
